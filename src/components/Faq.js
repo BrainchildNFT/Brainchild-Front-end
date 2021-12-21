@@ -1,12 +1,12 @@
 import React, { forwardRef, useContext } from 'react';
 function CustomToggle({ children, eventKey, callback, title }) {
-  const { activeEventKey } = useContext(AccordionContext);
-  const decoratedOnClick = useAccordionButton(eventKey, () =>
-    callback && callback(eventKey)
-  );
+    const { activeEventKey } = useContext(AccordionContext);
+    const decoratedOnClick = useAccordionButton(eventKey, () =>
+        callback && callback(eventKey)
+    );
 
-  const isCurrentEventKey = activeEventKey === eventKey;
-  const scale = isCurrentEventKey ? -1 : 1;
+    const isCurrentEventKey = activeEventKey === eventKey;
+    const scale = isCurrentEventKey ? -1 : 1;
 
   return (
     <button
@@ -50,40 +50,39 @@ const Faq = forwardRef((_, ref) => {
             4,207 will be available for public sale during the fairlaunch raffle.
             697 will be reserved for community building .
             96 will be reserved for the team and treasury.`,
-    },
-    { 
-      id: 5,
-      title: 'How do I buy Ethclock?',
-      desc: `
+        },
+        {
+            id: 5,
+            title: 'How do I buy Ethclock?',
+            desc: `
         Public sale will be held in Late January 2022 (estimated)
         The fairlaunch raffle will be conducted in 4 stages:
 	@@ -68,51 +70,60 @@ const Faq = forwardRef((_, ref) => {
         
         4. Reveal – Once all 5000 Ethclocks have been minted a full metadata will be revealed using ChainlinkVRF function.
       `,
-    },
-    { 
-      id: 6,
-      title: 'When is the reveal?',
-      desc: `
+        },
+        {
+            id: 6,
+            title: 'When is the reveal?',
+            desc: `
             A full collection metadata will be revealed once all Ethclocks has been minted. Using Chainlink VRF, all metadata rarity will be randomised. This is designed to prevent sophisticated actors from sniping/minting only the rarest pieces, ensuring a fairmint event.
             We take inspiration from the fine research paper done by Paradigm’s Anish and Hasu.
             (hyperlink the research paper: https://www.paradigm.xyz/2021/10/a-guide-to-designing-effective-nft-launches/)
       `,
-    },
-    { 
-      id: 7,
-      title: 'Will rarities matter?',
-      desc: 'Rarity is relative to the beholder’s eye. The deflationary mechanics via enhancement will ensure that the number of NFT and redeemable NFT will decrease as the community unlock higher level of Ethclocks. The randomised traits such as RGB and Shine will affect digital and physical appearance, while Efficiency will determine the cost of enhancement.',
-    },
-    { 
-      id: 8,
-      title: 'What rights do I get as a BrainchildNFT holder?',
-      desc: 'A BrainchildNFT holder will be privy to private community events and receive advantages in future NFT mints. You will also be able to steer the direction of BrainchildNFT project and future drops.',
-    },
-  ]
-  return (
-    <div className="relative min-h-screen flex items-center overflow-x-scroll overflow-y-hidden no-scrollbar mt-screen-1/4 select-none" ref={ref.containerRef}>
+        },
+        {
+            id: 7,
+            title: 'Will rarities matter?',
+            desc: 'Rarity is relative to the beholder’s eye. The deflationary mechanics via enhancement will ensure that the number of NFT and redeemable NFT will decrease as the community unlock higher level of Ethclocks. The randomised traits such as RGB and Shine will affect digital and physical appearance, while Efficiency will determine the cost of enhancement.',
+        },
+        {
+            id: 8,
+            title: 'What rights do I get as a BrainchildNFT holder?',
+            desc: 'A BrainchildNFT holder will be privy to private community events and receive advantages in future NFT mints. You will also be able to steer the direction of BrainchildNFT project and future drops.',
+        },
+    ]
+    return (  <div className="relative min-h-screen flex items-center overflow-x-scroll overflow-y-hidden no-scrollbar mt-screen-1/4 select-none" ref={ref.containerRef}>
       <div className="sm:p-24 w-full container mx-auto" ref={ref.contentRef}>
         <div className="relative w-full">
           <div className="w-full p-6 sm:p-8 text-black font-cormorant font-semibold italic text-xl sm:text-3xl backdrop-filter sm:backdrop-blur-0 backdrop-blur-200 bg-white bg-opacity-10">
@@ -105,7 +104,7 @@ const Faq = forwardRef((_, ref) => {
         </div>
       </div>
     </div>
-  );
+    );
 });
 
 export default Faq;
