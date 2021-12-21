@@ -1,6 +1,5 @@
 import React, { forwardRef, useContext } from 'react';
 import { Accordion, useAccordionButton, AccordionContext } from 'react-bootstrap';
-
 function CustomToggle({ children, eventKey, callback, title }) {
     const { activeEventKey } = useContext(AccordionContext);
     const decoratedOnClick = useAccordionButton(eventKey, () =>
