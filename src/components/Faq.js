@@ -51,18 +51,22 @@ const Faq = forwardRef((_, ref) => {
             4,207 will be available for public sale during the fairlaunch raffle.
             697 will be reserved for community building .
             96 will be reserved for the team and treasury.`,
-        },
-        {
-            id: 5,
-            title: 'How do I buy Ethclock?',
-            desc: `
+    },
+    { 
+      id: 5,
+      title: 'How do I buy Ethclock?',
+      desc: `
         Public sale will be held in Late January 2022 (estimated)
         The fairlaunch raffle will be conducted in 4 stages:
-	@@ -68,51 +70,60 @@ const Faq = forwardRef((_, ref) => {
+        1. Signature collection – wallet signatures will be collected within a 24-hour window.
+        2. Raffle – Using Chainlink VRF, 4207 wallets will be whitelisted for minting. Winners will be announced on our website and community channels. You can also connect your wallet to find out if you have been whitelisted.
+        3. Minting – You will have 48hours to mint up to 3 Ethclock per whitelisted wallet.
+        
+        Any unminted Ethclock will be raffled away by repeating the first three stages above in each subsequent week.
         
         4. Reveal – Once all 5000 Ethclocks have been minted a full metadata will be revealed using ChainlinkVRF function.
       `,
-        },
+    },
         {
             id: 6,
             title: 'When is the reveal?',
